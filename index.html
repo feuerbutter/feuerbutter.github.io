@@ -1,97 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name (Template) | Postdoc in Neutrino Physics</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name | Postdoc in Neutrino Physics</title>
+
+  <meta name="description" content="Postdoctoral researcher in neutrino physics. Research interests, projects, and contact links." />
   <style>
-    :root {
-      --bg: #f7f9fc;
+    :root{
+      --bg: #f6f8fb;
       --card: #ffffff;
-      --text: #1a1f2b;
-      --muted: #5a6478;
-      --accent: #274690;
+      --text: #0f1724;
+      --muted: #556070;
+      --accent: #1f4ea8;
+      --radius: 12px;
+      --container: 980px;
+      --glass: rgba(255,255,255,0.6);
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+
+    /* Reset & base */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--bg),#eef3fb 60%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      padding:2.25rem 1rem;
     }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem 3rem;
+
+    .wrap{
+      max-width:var(--container);
+      margin:0 auto;
     }
-    .card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 8px 24px rgba(14, 30, 62, 0.08);
+
+    header.site-header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      margin-bottom:1.25rem;
     }
-    h1, h2 { margin: 0 0 0.5rem 0; }
-    p { margin: 0.35rem 0; }
-    ul { margin: 0.5rem 0 0 1.2rem; }
-    .subtitle { color: var(--muted); }
-    .links a {
-      color: var(--accent);
-      text-decoration: none;
-      margin-right: 1rem;
+
+    .brand{
+      display:flex;
+      gap:0.75rem;
+      align-items:center;
     }
-    .links a:hover { text-decoration: underline; }
+
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#2b6adf);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:1.05rem;
+      box-shadow:0 6px 18px rgba(31,78,168,0.18);
+    }
+
+    h1{font-size:1.6rem;margin:0}
+    .subtitle{color:var(--muted);font-size:0.95rem}
+
+    /* Layout */
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:1rem;
+    }
+
+    @media(min-width:880px){
+      .grid{grid-template-columns: 1fr 320px}
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:1.25rem;
+      box-shadow:0 10px 30px rgba(14,30,62,0.06);
+      border:1px solid rgba(15,23,36,0.03);
+    }
+
+    .hero{
+      display:flex;
+      flex-direction:column;
+      gap:0.6rem;
+    }
+
+    .lead{
+      color:var(--muted);
+      margin-top:0.25rem;
+    }
+
+    .links{
+      margin-top:0.9rem;
+      display:flex;
+      gap:0.6rem;
+      flex-wrap:wrap;
+    }
+
+    .links a{
+      display:inline-block;
+      padding:0.45rem 0.7rem;
+      border-radius:8px;
+      text-decoration:none;
+      color:var(--accent);
+      background:transparent;
+      border:1px solid rgba(31,78,168,0.08);
+      font-weight:600;
+      transition:all 160ms ease;
+    }
+
+    .links a:hover,
+    .links a:focus{
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(31,78,168,0.08);
+      outline:none;
+    }
+
+    h2{font-size:1.05rem;margin:0 0 0.6rem 0}
+    ul{margin:0;padding-left:1.15rem}
+
+    .muted{color:var(--muted);font-size:0.95rem}
+
+    /* Right column */
+    .aside .small{
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .project{
+      margin-bottom:0.6rem;
+    }
+
+    .project strong{color:var(--text)}
+
+    /* Footer */
+    footer{
+      margin-top:1.25rem;
+      text-align:center;
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+
+    /* Focus for keyboard users */
+    a:focus{outline:3px solid rgba(31,78,168,0.14);outline-offset:3px;border-radius:6px}
+
+    /* Print-friendly */
+    @media print{
+      body{background:white;color:black}
+      .links a{display:none}
+      .card{box-shadow:none;border:1px solid #ddd}
+    }
   </style>
 </head>
 <body>
-  <main class="container" aria-label="Personal webpage content">
-    <section class="card">
-      <h1>Your Name</h1>
-      <p class="subtitle">Postdoctoral Researcher in Neutrino Physics</p>
-      <p>
-        I study neutrino oscillations, detector technologies, and beyond-standard-model signatures.
-        My work combines data analysis, simulation, and collaborative work in international experiments.
-      </p>
-      <p class="links">
+  <main class="wrap" aria-label="Personal webpage content">
+    <header class="site-header">
+      <div class="brand" aria-hidden="true">
+        <div class="logo">YN</div>
+        <div>
+          <h1>Your Name</h1>
+          <div class="subtitle">Postdoctoral Researcher in Neutrino Physics</div>
+        </div>
+      </div>
+      <nav aria-label="Quick links" class="links" role="navigation">
         <a href="mailto:your.name@institute.edu">Email</a>
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar (opens in new tab)">Google Scholar</a>
-        <a href="https://orcid.org/" target="_blank" rel="noopener noreferrer" aria-label="ORCID (opens in new tab)">ORCID</a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GitHub</a>
-      </p>
-    </section>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </header>
 
-    <section class="card">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Long-baseline and atmospheric neutrino oscillation measurements</li>
-        <li>Neutrino interaction modeling and detector response</li>
-        <li>Statistical inference and uncertainty quantification in HEP analyses</li>
-      </ul>
-    </section>
+    <div class="grid">
+      <section class="card hero" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p class="lead muted">I study neutrino oscillations, detector technologies, and beyond-standard-model signatures. My work combines data analysis, simulation, and collaborative work in international experiments.</p>
 
-    <section class="card">
-      <h2>Current Projects</h2>
-      <ul>
-        <li><strong>Project A:</strong> Precision oscillation parameter constraints using [Experiment Name].</li>
-        <li><strong>Project B:</strong> Reconstruction and classification improvements for low-energy events.</li>
-        <li><strong>Project C:</strong> Phenomenology studies for sterile-neutrino and NSI scenarios.</li>
-      </ul>
-    </section>
+        <div style="margin-top:0.9rem">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Long-baseline and atmospheric neutrino oscillation measurements</li>
+            <li>Neutrino interaction modeling and detector response</li>
+            <li>Statistical inference and uncertainty quantification in HEP analyses</li>
+          </ul>
+        </div>
 
-    <section class="card">
-      <h2>Selected Publications</h2>
-      <ul>
-        <li>Author et al., <em>Journal Name</em> (Year) — “Title of paper”.</li>
-        <li>Author et al., <em>Journal Name</em> (Year) — “Title of paper”.</li>
-        <li>Author et al., <em>Journal Name</em> (Year) — “Title of paper”.</li>
-      </ul>
-    </section>
+        <div style="margin-top:0.9rem">
+          <h2>Current Projects</h2>
+          <ul>
+            <li class="project"><strong>Project A:</strong> Precision oscillation parameter constraints using [Experiment Name].</li>
+            <li class="project"><strong>Project B:</strong> Reconstruction and classification improvements for low-energy events.</li>
+            <li class="project"><strong>Project C:</strong> Phenomenology studies for sterile-neutrino and NSI scenarios.</li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="card">
-      <h2>Teaching & Mentoring</h2>
-      <p>Mentee supervision, advanced particle physics tutorials, and computational methods workshops.</p>
-    </section>
-  </main>
-</body>
-</html>
+      <aside class="card aside" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact & Links</h2>
+        <p class="small muted">Prefer email for collaboration inquiries. Links open in a new tab.</p>
+
