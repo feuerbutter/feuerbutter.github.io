@@ -1,0 +1,108 @@
+{
+  "issued": "2026-10-05",
+  "sourceRevision": null,
+  "appointments": [
+    {
+      "dates": "February 2026–present",
+      "role": "Postdoctoral Researcher",
+      "institution": "Institute of High Energy Physics, China",
+      "description": "Machine learning for atmospheric neutrino reconstruction at JUNO."
+    },
+    {
+      "dates": "2020–2021",
+      "role": "Quantum Computing Associate",
+      "institution": "Horizon Quantum Computing, Singapore",
+      "description": "Implementation of quantum signal processing in MATLAB."
+    },
+    {
+      "dates": "2017–2019",
+      "role": "Research Assistant",
+      "institution": "Centre for Quantum Technologies, Singapore",
+      "description": "Monte Carlo sampling, Bayesian inference and quantum process tomography."
+    }
+  ],
+  "education": [
+    {
+      "dates": "2021–2025",
+      "degree": "DPhil in Particle Physics",
+      "institution": "University of Oxford",
+      "detail": "Thesis: Next-Generation Neutrino Interaction Measurements and Beyond-Standard-Model Physics with the Upgraded T2K Near Detector."
+    },
+    {
+      "dates": "2019–2020",
+      "degree": "MASt in Physics",
+      "institution": "University of Cambridge",
+      "detail": "First class."
+    },
+    {
+      "dates": "2013–2017",
+      "degree": "BSc (Hons) in Physics",
+      "institution": "National University of Singapore",
+      "detail": "Highest Distinction."
+    }
+  ],
+  "awards": [
+    {
+      "year": "2022–2023",
+      "title": "Great Britain Sasakawa Foundation Grant",
+      "institution": "Great Britain Sasakawa Foundation"
+    },
+    {
+      "year": "2022",
+      "title": "Denys Wilkinson Prize",
+      "institution": "University of Oxford"
+    },
+    {
+      "year": "2020",
+      "title": "Bateman Scholar",
+      "institution": "Trinity Hall, University of Cambridge"
+    },
+    {
+      "year": "2013–2017",
+      "title": "Science & Technology Undergraduate Scholarship",
+      "institution": "National University of Singapore"
+    },
+    {
+      "year": "2013–2017",
+      "title": "Dean’s List (five semesters)",
+      "institution": "National University of Singapore"
+    },
+    {
+      "year": "2015",
+      "title": "CRISP Award",
+      "institution": "National University of Singapore"
+    },
+    {
+      "year": "2015",
+      "title": "Silver Medal",
+      "institution": "University Physics Competition"
+    }
+  ],
+  "collaborations": [
+    {
+      "name": "GENIE",
+      "dates": "Since July 2023"
+    },
+    {
+      "name": "T2K",
+      "dates": "Since October 2021"
+    }
+  ],
+  "service": [
+    "SuperFGD assembly and detector hardware work for the T2K near-detector upgrade.",
+    "Training and work as a data-acquisition expert."
+  ],
+  "programming": [
+    "C++",
+    "Python",
+    "MATLAB",
+    "LaTeX",
+    "Linux"
+  ],
+  "languages": [
+    "Cantonese and Mandarin Chinese (native)",
+    "English (proficient)",
+    "German (intermediate)",
+    "Japanese (beginner)"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Weijun Li",
+  "nameChinese": "利伟君",
+  "role": "Postdoctoral Researcher",
+  "affiliation": "Institute of High Energy Physics",
+  "location": "China",
+  "email": "wjli@ihep.ac.cn",
+  "descriptor": "Experimental neutrino physics · Reconstruction · Statistical inference",
+  "bio": [
+    "I am a postdoctoral researcher at the Institute of High Energy Physics, working on atmospheric neutrino reconstruction for the Jiangmen Underground Neutrino Observatory (JUNO). I develop machine learning methods to connect detector signals with the particles and interactions that produced them.",
+    "My research brings together neutrino interaction modelling, detector reconstruction and statistical inference. During my DPhil at Oxford, I worked on the upgraded T2K near detector and on interaction modelling with GENIE. Earlier work at the Centre for Quantum Technologies in Singapore focused on Monte Carlo sampling and Bayesian methods for quantum systems."
+  ],
+  "github": "https://github.com/feuerbutter",
+  "reviewed": "2026-10-05",
+  "cvUrl": "/cv/Weijun-Li-CV.pdf"
+}

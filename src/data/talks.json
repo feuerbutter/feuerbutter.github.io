@@ -1,0 +1,113 @@
+[
+  {
+    "id": "tki-trackless",
+    "date": "2024-06-21",
+    "displayDate": "21 June 2024",
+    "title": "Transverse Kinematic Imbalance Analysis and Pion Trackless Reconstruction at the upgraded T2K near detector",
+    "event": "Neutrino 2024 · XXXI International Conference on Neutrino Physics and Astrophysics",
+    "kind": "Poster · presenter",
+    "links": [
+      {
+        "label": "Conference record and poster",
+        "url": "https://agenda.infn.it/event/37867/contributions/228391/"
+      }
+    ]
+  },
+  {
+    "id": "combined-tki",
+    "date": "2024-06-18",
+    "displayDate": "18 June 2024",
+    "title": "First combined analysis of Transverse Kinematic Imbalance data with and without pion production constraints",
+    "event": "Neutrino 2024 · XXXI International Conference on Neutrino Physics and Astrophysics",
+    "kind": "Poster · coauthor",
+    "links": [
+      {
+        "label": "Conference record",
+        "url": "https://agenda.infn.it/event/37867/contributions/227846/"
+      }
+    ]
+  },
+  {
+    "id": "bsm-near-detectors",
+    "date": "2024-06-04",
+    "displayDate": "4 June 2024",
+    "title": "BSM at T2SK/HK near detectors",
+    "event": "4th Workshop on New Physics Opportunities at Neutrino Facilities",
+    "kind": "Plenary talk",
+    "links": [
+      {
+        "label": "Conference record",
+        "url": "https://indico.ibs.re.kr/event/649/contributions/5823/"
+      }
+    ]
+  },
+  {
+    "id": "beamhnl",
+    "date": "2024-06-04",
+    "displayDate": "4 June 2024",
+    "title": "BeamHNL, a GENIE-based general heavy neutral lepton generator",
+    "event": "4th Workshop on New Physics Opportunities at Neutrino Facilities",
+    "kind": "Contributed talk",
+    "links": []
+  },
+  {
+    "id": "t2k-upgrade",
+    "date": "2023-10-26",
+    "displayDate": "26 October 2023",
+    "title": "Assembly, test and analysis development of the T2K upgrade",
+    "event": "XX International Workshop on Neutrino Telescopes",
+    "kind": "Parallel talk",
+    "links": [
+      {
+        "label": "Conference record and slides",
+        "url": "https://agenda.infn.it/event/33107/contributions/205066/"
+      },
+      {
+        "label": "Zenodo record",
+        "url": "https://doi.org/10.5281/zenodo.10664093"
+      }
+    ]
+  },
+  {
+    "id": "t2k-oscillation",
+    "date": "2023-07-05",
+    "displayDate": "5 July 2023",
+    "title": "T2K latest neutrino oscillation results",
+    "event": "WIN 2023 · 29th International Workshop on Weak Interactions and Neutrinos",
+    "kind": "Parallel talk",
+    "links": [
+      {
+        "label": "Conference record and slides",
+        "url": "https://indico.ihep.ac.cn/event/18269/contributions/136241/"
+      }
+    ]
+  },
+  {
+    "id": "special4young",
+    "date": "2023-03-08",
+    "displayDate": "8 March 2023",
+    "title": "Recent Oscillation Results and Upgrade of the T2K Experiment",
+    "event": "SPeCial4Young · SYSU–PKU Collider Physics Forum for Young Scientists",
+    "kind": "Seminar",
+    "links": [
+      {
+        "label": "Seminar record",
+        "url": "https://indico.ihep.ac.cn/event/19079/"
+      }
+    ]
+  },
+  {
+    "id": "ismd",
+    "date": "2018-09-03",
+    "displayDate": "3–7 September 2018",
+    "title": "A general free plane wave ansatz to the classical SU(2) Yang–Mills theory: with application to gravity",
+    "event": "XLVIII International Symposium on Multiparticle Dynamics",
+    "kind": "Poster",
+    "links": [
+      {
+        "label": "Related proceedings",
+        "url": "https://doi.org/10.1051/epjconf/201920609011"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://feuerbutter.github.io/sitemap.xml

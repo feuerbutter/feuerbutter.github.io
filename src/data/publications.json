@@ -1,0 +1,325 @@
+[
+  {
+    "id": "quantum-constraints",
+    "title": "Sampling Quantum States with Inequality Constraints",
+    "authors": [
+      "Weijun Li",
+      "Rui Han",
+      "Jiangwei Shang",
+      "Hui Khoon Ng",
+      "Berthold-Georg Englert"
+    ],
+    "type": "journal",
+    "status": "published",
+    "year": 2026,
+    "date": "2026-05-29",
+    "venue": "Entropy",
+    "volume": "28",
+    "issue": "6",
+    "pages": "614",
+    "doi": "10.3390/e28060614",
+    "arxiv": "2109.14215",
+    "preprintYear": 2021,
+    "selectedRank": 3,
+    "tags": [
+      "quantum"
+    ],
+    "summary": "Sequentially constrained Monte Carlo sampling makes it possible to explore quantum states subject to physical constraints, including bound entanglement and specified target distributions.",
+    "contribution": "I applied and extended sequentially constrained Monte Carlo methods to sample quantum states in higher dimensions and with prescribed properties.",
+    "code": "https://github.com/feuerbutter/QSCMC",
+    "sources": [
+      "https://doi.org/10.3390/e28060614",
+      "https://arxiv.org/abs/2109.14215"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Li, Weijun",
+      "Han, Rui",
+      "Shang, Jiangwei",
+      "Ng, Hui Khoon",
+      "Englert, Berthold-Georg"
+    ]
+  },
+  {
+    "id": "centre-of-momentum",
+    "title": "Center-of-momentum variables in charged-current single-pion–single-proton events",
+    "authors": [
+      "Weijun Li"
+    ],
+    "type": "journal",
+    "status": "published",
+    "year": 2025,
+    "date": "2025-04-14",
+    "venue": "Physical Review D",
+    "volume": "111",
+    "pages": "072010",
+    "doi": "10.1103/PhysRevD.111.072010",
+    "selectedRank": 1,
+    "tags": [
+      "neutrino"
+    ],
+    "summary": "Kinematic observables designed to separate final-state interactions from other nuclear effects, with reduced dependence on the neutrino flux.",
+    "contribution": "I devised and studied the centre-of-momentum variables as a way to probe final-state interactions in neutrino scattering.",
+    "sources": [
+      "https://doi.org/10.1103/PhysRevD.111.072010"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Li, Weijun"
+    ]
+  },
+  {
+    "id": "new-physics-neutrino-facilities",
+    "title": "New Physics Opportunities at Neutrino Facilities: BSM Physics at Accelerator, Atmospheric, and Reactor Neutrino Experiments",
+    "authors": [
+      "Koun Choi",
+      "Doojin Kim",
+      "Jong-Chul Park",
+      "Seodong Shin",
+      "Pouya Bakhti",
+      "Ki-Young Choi",
+      "Chang Hyon Ha",
+      "Kazumi Hata",
+      "Wooyoung Jang",
+      "Yu Seon Jeong",
+      "Young Ju Ko",
+      "Hyun Su Lee",
+      "Weijun Li",
+      "Yu-Feng Li",
+      "Mehedi Masud",
+      "Kenny C. Y. Ng",
+      "Jungsic Park",
+      "Min-Gwa Park",
+      "Komninos-John Plows",
+      "Meshkat Rajaee",
+      "Eunil Won",
+      "Byeongsu Yang",
+      "Seong Moon Yoo",
+      "Jaehoon Yu",
+      "Seokhoon Yun"
+    ],
+    "type": "white-paper",
+    "status": "preprint",
+    "year": 2025,
+    "date": "2025-06-18",
+    "venue": "arXiv",
+    "arxiv": "2506.15306",
+    "preprintYear": 2025,
+    "tags": [
+      "neutrino"
+    ],
+    "summary": "A community white paper on opportunities to search for physics beyond the Standard Model at neutrino facilities.",
+    "sources": [
+      "https://arxiv.org/abs/2506.15306"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Choi, Koun",
+      "Kim, Doojin",
+      "Park, Jong-Chul",
+      "Shin, Seodong",
+      "Bakhti, Pouya",
+      "Choi, Ki-Young",
+      "Ha, Chang Hyon",
+      "Hata, Kazumi",
+      "Jang, Wooyoung",
+      "Jeong, Yu Seon",
+      "Ko, Young Ju",
+      "Lee, Hyun Su",
+      "Li, Weijun",
+      "Li, Yu-Feng",
+      "Masud, Mehedi",
+      "Ng, Kenny C. Y.",
+      "Park, Jungsic",
+      "Park, Min-Gwa",
+      "Plows, Komninos-John",
+      "Rajaee, Meshkat",
+      "Won, Eunil",
+      "Yang, Byeongsu",
+      "Yoo, Seong Moon",
+      "Yu, Jaehoon",
+      "Yun, Seokhoon"
+    ]
+  },
+  {
+    "id": "genie-tki-tuning",
+    "title": "First combined tuning on transverse kinematic imbalance data with and without pion production constraints",
+    "authors": [
+      "Weijun Li",
+      "Marco Roda",
+      "Júlia Tena-Vidal",
+      "Costas Andreopoulos",
+      "Xianguo Lu",
+      "Adi Ashkenazi",
+      "Joshua Barrow",
+      "Steven Dytman",
+      "Hugh Gallagher",
+      "Alfonso Andres Garcia Soto",
+      "Steven Gardiner",
+      "Matan Goldenberg",
+      "Robert Hatcher",
+      "Or Hen",
+      "Igor D. Kakorin",
+      "Konstantin S. Kuzmin",
+      "Anselmo Meregalia",
+      "Vadim A. Naumov",
+      "Afroditi Papadopoulou",
+      "Gabriel Perdue",
+      "Komninos-John Plows",
+      "Alon Sportes",
+      "Noah Steinberg",
+      "Vladyslav Syrotenko",
+      "Jeremy Wolcott",
+      "Qiyu Yan"
+    ],
+    "collaboration": "GENIE Collaboration",
+    "type": "journal",
+    "status": "published",
+    "year": 2024,
+    "date": "2024-10-22",
+    "venue": "Physical Review D",
+    "volume": "110",
+    "pages": "072016",
+    "doi": "10.1103/PhysRevD.110.072016",
+    "arxiv": "2404.08510",
+    "preprintYear": 2024,
+    "selectedRank": 2,
+    "tags": [
+      "neutrino"
+    ],
+    "summary": "A combined GENIE tune using neutrino scattering measurements with and without final-state pions, bringing complementary interaction constraints into one analysis.",
+    "contribution": "I used the GENIE Comparisons framework to develop tune G24_20i_06_22c and investigated how matching data and parameter choices improves agreement.",
+    "sources": [
+      "https://doi.org/10.1103/PhysRevD.110.072016",
+      "https://arxiv.org/abs/2404.08510"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Li, Weijun",
+      "Roda, Marco",
+      "Tena-Vidal, Júlia",
+      "Andreopoulos, Costas",
+      "Lu, Xianguo",
+      "Ashkenazi, Adi",
+      "Barrow, Joshua",
+      "Dytman, Steven",
+      "Gallagher, Hugh",
+      "Garcia Soto, Alfonso Andres",
+      "Gardiner, Steven",
+      "Goldenberg, Matan",
+      "Hatcher, Robert",
+      "Hen, Or",
+      "Kakorin, Igor D.",
+      "Kuzmin, Konstantin S.",
+      "Meregalia, Anselmo",
+      "Naumov, Vadim A.",
+      "Papadopoulou, Afroditi",
+      "Perdue, Gabriel",
+      "Plows, Komninos-John",
+      "Sportes, Alon",
+      "Steinberg, Noah",
+      "Syrotenko, Vladyslav",
+      "Wolcott, Jeremy",
+      "Yan, Qiyu"
+    ]
+  },
+  {
+    "id": "wishart-sampling",
+    "title": "Uncorrelated problem-specific samples of quantum states from zero-mean Wishart distributions",
+    "authors": [
+      "Rui Han",
+      "Weijun Li",
+      "Shrobona Bagchi",
+      "Hui Khoon Ng",
+      "Berthold-Georg Englert"
+    ],
+    "type": "article",
+    "status": "preprint",
+    "year": 2021,
+    "date": "2021-06-16",
+    "venue": "arXiv",
+    "arxiv": "2106.08533",
+    "preprintYear": 2021,
+    "tags": [
+      "quantum"
+    ],
+    "summary": "A two-step sampling method uses Wishart proposal distributions and rejection sampling to generate uncorrelated quantum states from a desired distribution.",
+    "contribution": "I helped construct and implement the two-step quantum-state sampling algorithm in MATLAB.",
+    "code": "https://github.com/feuerbutter/QSam",
+    "sources": [
+      "https://arxiv.org/abs/2106.08533"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Han, Rui",
+      "Li, Weijun",
+      "Bagchi, Shrobona",
+      "Ng, Hui Khoon",
+      "Englert, Berthold-Georg"
+    ]
+  },
+  {
+    "id": "bayesian-quantum-evidence",
+    "title": "Very strong evidence in favor of quantum mechanics and against local hidden variables from a Bayesian analysis",
+    "authors": [
+      "Yanwu Gu",
+      "Weijun Li",
+      "Michael Evans",
+      "Berthold-Georg Englert"
+    ],
+    "type": "journal",
+    "status": "published",
+    "year": 2019,
+    "date": "2019-02-13",
+    "venue": "Physical Review A",
+    "volume": "99",
+    "pages": "022112",
+    "doi": "10.1103/PhysRevA.99.022112",
+    "tags": [
+      "quantum"
+    ],
+    "summary": "A Bayesian comparison of quantum mechanics and local hidden-variable models using relative belief ratios and checks of inferential bias.",
+    "contribution": "I developed the MATLAB analysis, including likelihood maximisation, sample generation and mock-data bias checks.",
+    "sources": [
+      "https://doi.org/10.1103/PhysRevA.99.022112"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Gu, Yanwu",
+      "Li, Weijun",
+      "Evans, Michael",
+      "Englert, Berthold-Georg"
+    ]
+  },
+  {
+    "id": "yang-mills-plane-waves",
+    "title": "A General Free Plane Wave Ansatz to The Classcal SU(2) Yang-Mills Theory: with Application to Gravity",
+    "authors": [
+      "W. Li",
+      "A. H. Chan",
+      "C. H. Oh"
+    ],
+    "type": "proceedings",
+    "status": "published",
+    "year": 2019,
+    "date": "2019",
+    "venue": "EPJ Web of Conferences",
+    "volume": "206",
+    "pages": "09011",
+    "doi": "10.1051/epjconf/201920609011",
+    "tags": [
+      "theory"
+    ],
+    "summary": "A plane-wave ansatz for classical SU(2) Yang–Mills theory, developed from conditions on the gauge field.",
+    "contribution": "In my undergraduate research, I derived a general ansatz by imposing free-plane-wave conditions on the gauge field.",
+    "sources": [
+      "https://doi.org/10.1051/epjconf/201920609011"
+    ],
+    "public": true,
+    "bibtexAuthors": [
+      "Li, W.",
+      "Chan, A. H.",
+      "Oh, C. H."
+    ]
+  }
+]

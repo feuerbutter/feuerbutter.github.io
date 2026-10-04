@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+import { profile, talks } from '../lib/content';
+interface Props { title: string; description: string; noindex?: boolean; }
+const { title, description, noindex = false } = Astro.props;
+const path = Astro.url.pathname;
+const reviewedLabel = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(profile.reviewed));
+const canonical = new URL(path === '/404/' ? '/404.html' : path, Astro.site);
+const navigation = [ ['Home','/'], ['Research','/research/'], ['Publications','/publications/'], ...(talks.length ? [['Talks','/talks/']] : []), ['CV','/cv/'] ];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#faf9f6" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Weijun Li" />
+    <meta name="twitter:card" content="summary" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="/" aria-label="Weijun Li, home">Weijun Li<span lang="zh-Hans">利伟君</span></a>
+      <nav aria-label="Main navigation">
+        {navigation.map(([label, href]) => <a href={href} aria-current={(href === '/' ? path === '/' : path.startsWith(href)) ? 'page' : undefined}>{label}</a>)}
+      </nav>
+    </header>
+    <main id="main" class="wrap" tabindex="-1"><slot /></main>
+    <footer class="site-footer wrap">
+      <div><a class="footer-name" href="/">{profile.name}</a><p>{profile.affiliation}</p></div>
+      <div class="footer-links">{profile.email && <a href={`mailto:${profile.email}`}>{profile.email}</a>}<a href={profile.github}>GitHub</a><a href={profile.cvUrl}>CV <span class="filetype">PDF</span></a></div>
+      <p class="review-date">Content reviewed {reviewedLabel}</p>
+    </footer>
+  </body>
+</html>

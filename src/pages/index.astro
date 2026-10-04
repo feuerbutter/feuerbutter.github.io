@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationEntry from '../components/PublicationEntry.astro';
+import { profile, selected } from '../lib/content';
+const research = (await getCollection('research')).sort((a,b) => a.data.order-b.data.order);
+---
+<BaseLayout title="Weijun Li | Neutrino physics & statistical inference" description="Weijun Li, postdoctoral researcher at IHEP. Neutrino interactions, detector reconstruction at JUNO and T2K, and Monte Carlo methods for quantum inference.">
+  <section class="intro" aria-labelledby="intro-heading">
+    <div class="intro-main">
+      <p class="eyebrow">Experimental neutrino physics</p>
+      <h1 id="intro-heading">Weijun Li <span lang="zh-Hans">利伟君</span></h1>
+      <p class="appointment">{profile.role}<span aria-hidden="true"> · </span>{profile.affiliation}</p>
+      {profile.bio.map(paragraph => <p class="bio">{paragraph}</p>)}
+      <div class="intro-links"><a class="button" href="/research/">Explore my research <span aria-hidden="true">→</span></a><a href={profile.cvUrl}>Download CV <span class="filetype">PDF</span></a></div>
+    </div>
+    <aside class="intro-aside" aria-label="Research at a glance">
+      <p class="eyebrow">At a glance</p>
+      <dl><dt>Current focus</dt><dd>Atmospheric neutrino<br class="desktop-only" /> reconstruction at JUNO</dd><dt>Research background</dt><dd>T2K · GENIE<br />Quantum statistical inference</dd><dt>Doctorate</dt><dd>Particle Physics<br />University of Oxford, 2025</dd></dl>
+      {profile.email && <a class="contact-link" href={`mailto:${profile.email}`}>{profile.email}<span aria-hidden="true"> ↗</span></a>}
+    </aside>
+  </section>
+  <section class="section research-overview" aria-labelledby="research-heading">
+    <div class="section-heading"><div><p class="eyebrow">Questions & methods</p><h2 id="research-heading">Research directions</h2></div><a href="/research/">Research overview <span aria-hidden="true">→</span></a></div>
+    <div class="theme-grid">{research.map((item,index) => <article><span class="index-number" aria-hidden="true">0{index+1}</span><h3><a href={`/research/#${item.id}`}>{item.data.title}</a></h3><p>{item.data.summary}</p></article>)}</div>
+  </section>
+  <section class="section" aria-labelledby="selected-heading">
+    <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="selected-heading">Recent contributions</h2></div><a href="/publications/">All publications <span aria-hidden="true">→</span></a></div>
+    <div class="publications-list">{selected.map(p => <PublicationEntry publication={p} summary />)}</div>
+  </section>
+  <section class="contact-section" aria-labelledby="contact-heading"><div><p class="eyebrow">Contact</p><h2 id="contact-heading">Get in touch</h2><p>For research correspondence, please contact me at the Institute of High Energy Physics.</p></div>{profile.email && <a class="large-link" href={`mailto:${profile.email}`}>{profile.email}<span aria-hidden="true"> ↗</span></a>}</section>
+</BaseLayout>

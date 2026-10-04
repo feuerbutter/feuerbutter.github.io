@@ -1,0 +1,97 @@
+[
+  {
+    "url": "https://agenda.infn.it/event/33107/contributions/205066/",
+    "status": 200,
+    "final": "https://agenda.infn.it/event/33107/contributions/205066/"
+  },
+  {
+    "url": "https://agenda.infn.it/event/37867/contributions/227846/",
+    "status": 200,
+    "final": "https://agenda.infn.it/event/37867/contributions/227846/"
+  },
+  {
+    "url": "https://agenda.infn.it/event/37867/contributions/228391/",
+    "status": 200,
+    "final": "https://agenda.infn.it/event/37867/contributions/228391/"
+  },
+  {
+    "url": "https://arxiv.org/abs/2106.08533",
+    "status": 200,
+    "final": "https://arxiv.org/abs/2106.08533"
+  },
+  {
+    "url": "https://arxiv.org/abs/2109.14215",
+    "status": 200,
+    "final": "https://arxiv.org/abs/2109.14215"
+  },
+  {
+    "url": "https://arxiv.org/abs/2404.08510",
+    "status": 200,
+    "final": "https://arxiv.org/abs/2404.08510"
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.15306",
+    "status": 200,
+    "final": "https://arxiv.org/abs/2506.15306"
+  },
+  {
+    "url": "https://doi.org/10.1051/epjconf/201920609011",
+    "status": 403,
+    "note": "access restricted/rate-limited"
+  },
+  {
+    "url": "https://doi.org/10.1103/PhysRevA.99.022112",
+    "status": 200,
+    "final": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.022112"
+  },
+  {
+    "url": "https://doi.org/10.1103/PhysRevD.110.072016",
+    "status": 200,
+    "final": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.072016"
+  },
+  {
+    "url": "https://doi.org/10.1103/PhysRevD.111.072010",
+    "status": 200,
+    "final": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.072010"
+  },
+  {
+    "url": "https://doi.org/10.3390/e28060614",
+    "status": 403,
+    "note": "access restricted/rate-limited"
+  },
+  {
+    "url": "https://doi.org/10.5281/zenodo.10664093",
+    "status": 200,
+    "final": "https://zenodo.org/records/10664093"
+  },
+  {
+    "url": "https://github.com/feuerbutter",
+    "status": 200,
+    "final": "https://github.com/feuerbutter"
+  },
+  {
+    "url": "https://github.com/feuerbutter/QSCMC",
+    "status": 200,
+    "final": "https://github.com/feuerbutter/QSCMC"
+  },
+  {
+    "url": "https://github.com/feuerbutter/QSam",
+    "status": 200,
+    "final": "https://github.com/feuerbutter/QSam"
+  },
+  {
+    "url": "https://indico.ibs.re.kr/event/649/contributions/5823/",
+    "status": 200,
+    "final": "https://indico.ibs.re.kr/event/649/contributions/5823/"
+  },
+  {
+    "url": "https://indico.ihep.ac.cn/event/18269/contributions/136241/",
+    "status": 200,
+    "final": "https://indico.ihep.ac.cn/event/18269/contributions/136241/"
+  },
+  {
+    "url": "https://indico.ihep.ac.cn/event/19079/",
+    "status": 200,
+    "final": "https://indico.ihep.ac.cn/event/19079/"
+  }
+]

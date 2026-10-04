@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { selected, citationVenue, type Publication } from '../../../lib/content';
+export function getStaticPaths() { return selected.map(publication => ({ params: { slug: publication.id }, props: { publication } })); }
+interface Props { publication: Publication }
+const { publication: p } = Astro.props;
+---
+<BaseLayout title={`${p.title} | Weijun Li`} description={p.summary}>
+  <Fragment slot="head"><meta name="citation_title" content={p.title} />{p.authors.map(author => <meta name="citation_author" content={author} />)}<meta name="citation_publication_date" content={p.date.replaceAll('-','/')} /><meta name="citation_journal_title" content={p.venue} /><meta name="citation_volume" content={p.volume} />{p.issue && <meta name="citation_issue" content={p.issue} />}<meta name="citation_firstpage" content={p.pages} /><meta name="citation_doi" content={p.doi} /></Fragment>
+  <div class="page-heading paper-heading"><a class="back-link" href="/publications/">← All publications</a><p class="eyebrow">{p.year} · Published research</p><h1>{p.title}</h1><p class="authors">{p.authors.map((a,i) => <>{i > 0 && ', '}{a === 'Weijun Li' ? <strong>{a}</strong> : a}</>)}</p><p class="venue"><cite>{citationVenue(p)}</cite> ({p.year})</p></div>
+  <div class="paper-body prose"><h2>About this work</h2><p class="deck">{p.summary}</p>{p.contribution && <><h2>My contribution</h2><p>{p.contribution}</p></>}<h2>Read and cite</h2><ul class="resource-list"><li><a href={`https://doi.org/${p.doi}`}>Published article · {p.doi}</a></li>{p.arxiv && <li><a href={`https://arxiv.org/abs/${p.arxiv}`}>Preprint · arXiv:{p.arxiv}</a>{p.preprintYear && <span class="muted"> (first submitted {p.preprintYear})</span>}</li>}{p.code && <li><a href={p.code}>Public software</a></li>}<li><a href={`/publications/${p.id}.bib`} download>Download BibTeX citation</a></li></ul></div>
+</BaseLayout>

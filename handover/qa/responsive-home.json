@@ -1,0 +1,44 @@
+[
+  {
+    "bodyText": "17px",
+    "minNavHeight": 44,
+    "minNavWidth": 44,
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "bodyText": "17px",
+    "minNavHeight": 44,
+    "minNavWidth": 44,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "bodyText": "17px",
+    "minNavHeight": 44,
+    "minNavWidth": 44,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "bodyText": "18px",
+    "minNavHeight": 45.75,
+    "minNavWidth": 44,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "bodyText": "18px",
+    "minNavHeight": 45.75,
+    "minNavWidth": 44,
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "bodyText": "18px",
+    "minNavHeight": 45.75,
+    "minNavWidth": 44,
+    "scrollWidth": 1440,
+    "width": 1440
+  }
+]
