@@ -11,7 +11,7 @@ Implement the supplied academic website plan using the owner's actual CV. Five m
 
 ## Review and release
 
-Local implementation and QA are complete. The next step is the review PR, then the owner's release approval. The implementation plan explicitly defers production deployment until approval. Pages currently publishes `main` from `/ (root)`; the reviewed migration must switch its source to GitHub Actions before merge. There has been no production deployment in this task.
+Local implementation and QA are complete. Review PR: https://github.com/feuerbutter/feuerbutter.github.io/pull/2 (open, attached to the implementation chat). Implementation commit: `4264b2a8a2fbdf8f3ad1d8822984333444178571`, pushed and verified against origin. The next step is the owner's review and release approval. GitHub validation is configured for every feature-branch push and PR; consult the PR checks for the latest head. The implementation plan explicitly defers production deployment until approval. Pages currently publishes `main` from `/ (root)`; the reviewed migration must switch its source to GitHub Actions before merge. There has been no production deployment in this task.
 
 Baseline: `e811184758001d1170fdcb8275a1c71edf0fd445`. The original local root HTML is recoverably retained under `/Users/wjli/Workspace/discarded/feuerbutter.github.io/redesign-20261005/original/index.html`, as well as in Git history. No data was permanently deleted.
 
