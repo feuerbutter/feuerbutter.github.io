@@ -1,0 +1,66 @@
+[
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Research",
+    "main": true,
+    "overflow": false,
+    "path": "/research/",
+    "title": "Research | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Publications",
+    "main": true,
+    "overflow": false,
+    "path": "/publications/",
+    "title": "Publications | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Talks & posters",
+    "main": true,
+    "overflow": false,
+    "path": "/talks/",
+    "title": "Talks & posters | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Curriculum vitae",
+    "main": true,
+    "overflow": false,
+    "path": "/cv/",
+    "title": "Curriculum vitae | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Center-of-momentum variables in charged-current single-pion–single-proton events",
+    "main": true,
+    "overflow": false,
+    "path": "/publications/centre-of-momentum/",
+    "title": "Center-of-momentum variables in charged-current single-pion–single-proton events | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "First combined tuning on transverse kinematic imbalance data with and without pion production constraints",
+    "main": true,
+    "overflow": false,
+    "path": "/publications/genie-tki-tuning/",
+    "title": "First combined tuning on transverse kinematic imbalance data with and without pion production constraints | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Sampling Quantum States with Inequality Constraints",
+    "main": true,
+    "overflow": false,
+    "path": "/publications/quantum-constraints/",
+    "title": "Sampling Quantum States with Inequality Constraints | Weijun Li"
+  },
+  {
+    "bodyColor": "rgb(0, 33, 71)",
+    "h1": "Page not found",
+    "main": true,
+    "overflow": false,
+    "path": "/release-check-missing-page-20261005/",
+    "title": "Page not found | Weijun Li"
+  }
+]

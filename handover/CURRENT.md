@@ -1,7 +1,8 @@
 # Academic website redesign
 
 Maintained checkout: `/Users/wjli/Workspace/feuerbutter.github.io`, local Mac.
-Branch: `codex/academic-website-redesign`.
+Branch: `main` (maintained checkout synchronized after release).
+Review branch: `codex/academic-website-redesign`, retained for history.
 Repository: `feuerbutter/feuerbutter.github.io`; upstream `origin`.
 Owner: this website implementation chat. No delegated writers or monitors.
 
@@ -11,7 +12,13 @@ Implement the supplied academic website plan using the owner's actual CV. Five m
 
 ## Review and release
 
-Local implementation and QA are complete. Review PR: https://github.com/feuerbutter/feuerbutter.github.io/pull/2 (open, attached to the implementation chat). Implementation commit: `4264b2a8a2fbdf8f3ad1d8822984333444178571`, pushed and verified against origin. The next step is the owner's review and release approval. GitHub validation is configured for every feature-branch push and PR; consult the PR checks for the latest head. The implementation plan explicitly defers production deployment until approval. Pages currently publishes `main` from `/ (root)`; the reviewed migration must switch its source to GitHub Actions before merge. There has been no production deployment in this task.
+The owner approved merge and publication on 5 October 2026. PR https://github.com/feuerbutter/feuerbutter.github.io/pull/2 is merged. Release commit: `b727f3eeea31c3c8b3eadf0a96763ac41b37273f`. Both PR validation checks passed before merge. GitHub Pages source is now **GitHub Actions**, verified on a freshly loaded settings page before confirming the merge. HTTPS remains enforced and there is no custom domain.
+
+The production deployment succeeded: https://github.com/feuerbutter/feuerbutter.github.io/actions/runs/37245380412 (34 seconds; build and deploy successful). Live website: https://feuerbutter.github.io/ . All 22 published files matched the approved build byte-for-byte. A deliberately missing path returned HTTP 404 with the custom page. Every HTML route was opened in Edge; mobile navigation, the navy styling, contact email, canonical URL and public three-page PDF were verified. Evidence is in `handover/qa/live-*`.
+
+Automatic approval review initially rejected merge confirmation because saved Pages configuration had not yet been verified. A fresh settings page established that GitHub had persisted the source selection automatically; the subsequent merge was accepted. No controls were bypassed and no permission blocker remains.
+
+Current next step: normal content maintenance using `docs/CONTENT_GUIDE.md`. No release action remains. The release-record commit changes documentation and QA evidence only, not deployed content.
 
 Baseline: `e811184758001d1170fdcb8275a1c71edf0fd445`. The original local root HTML is recoverably retained under `/Users/wjli/Workspace/discarded/feuerbutter.github.io/redesign-20261005/original/index.html`, as well as in Git history. No data was permanently deleted.
 
@@ -24,4 +31,4 @@ Baseline: `e811184758001d1170fdcb8275a1c71edf0fd445`. The original local root HT
 - `docs/LAUNCH_CHECKLIST.md`: release and rollback, including the prior Pages configuration.
 - Local preview: Astro preview on loopback port 4321; serve `dist/` only.
 
-Original private CV and extraction were kept outside the repository. Optional portrait, additional profile identifiers and teaching/mentoring details remain omitted. Live-site verification is outstanding until release approval and successful deployment.
+Original private CV and extraction were kept outside the repository. Optional portrait, additional profile identifiers and teaching/mentoring details remain omitted. Full screen-reader, axe and Lighthouse audits remain outside the completed checks; see `handover/VALIDATION.md`.

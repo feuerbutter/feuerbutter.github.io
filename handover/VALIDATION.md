@@ -1,6 +1,6 @@
 # Validation — 5 October 2026
 
-Implementation: Astro 7.3.5, Node 24.19.0, pnpm 11.19.0. Browser: Microsoft Edge on macOS, production build served over loopback. Results apply to the review branch, not the unchanged production site.
+Implementation: Astro 7.3.5, Node 24.19.0, pnpm 11.19.0. Browser: Microsoft Edge on macOS, production build served over loopback. Pre-release results apply to the reviewed implementation. The production release and live verification below confirm that the same build is published.
 
 ## Completed
 
@@ -19,6 +19,16 @@ Implementation: Astro 7.3.5, Node 24.19.0, pnpm 11.19.0. Browser: Microsoft Edge
 
 ## Limits and release checks
 
-No Lighthouse score or full screen-reader/WCAG certification is claimed. Automated accessibility checks cover the named structural checks above; they are not an axe audit. The public PDF is not tagged; the HTML CV provides the accessible reading alternative. Print preview was checked for CV, not every publication pagination variant. User-site root paths and all assets pass local checks; production route/asset/404 tests remain for the approved deployment.
+No Lighthouse score or full screen-reader/WCAG certification is claimed. Automated accessibility checks cover the named structural checks above; they are not an axe audit. The public PDF is not tagged; the HTML CV provides the accessible reading alternative. Print preview was checked for CV, not every publication pagination variant. User-site root paths and all assets pass local checks; production route/asset/404 checks are complete as recorded below.
 
 No portrait or unverified researcher identifiers were added. The content audit records the source-CV date ambiguity, publisher title spelling and the Neutel event/archive date reconciliation.
+
+## Production release — 5 October 2026
+
+- Owner approved publishing. PR #2 merged as `b727f3eeea31c3c8b3eadf0a96763ac41b37273f` after both checks passed.
+- Pages source changed to GitHub Actions and verified persisted on a fresh settings page before merge. HTTPS enforced; no custom domain.
+- Deployment succeeded in 34 seconds: https://github.com/feuerbutter/feuerbutter.github.io/actions/runs/37245380412 . GitHub reported non-fatal hosted-runner/action runtime migration notices; all build, test and deploy steps passed.
+- HTTP checks: all 22 published files returned HTTP 200 and matched the reviewed local build exactly, including all HTML, the three-page PDF, eight BibTeX files, CSS, favicon, robots.txt and sitemap. One deliberately missing route returned HTTP 404 with the exact custom 404 content. See `qa/live-http-check.json`.
+- Live browser: all nine HTML views opened successfully (the custom 404 via a missing URL), correct headings and navy styling, no desktop overflow. Homepage canonical and `mailto:wjli@ihep.ac.cn` verified. See `qa/live-browser-routes.json` and `qa/live-desktop.jpg`.
+- At 390 px: homepage and Publications had no horizontal overflow; all five navigation targets were at least 44 × 44 px, and the Publications navigation link worked. Viewport override reset after checking. See `qa/live-mobile.jpg`.
+- Published PDF opened in Edge's viewer as three pages; first-page identity and appointment/education layout checked. The HTTP byte comparison establishes the same previously reviewed three-page document is served. See `qa/live-cv-viewer.jpg`.

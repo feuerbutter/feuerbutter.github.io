@@ -1,0 +1,191 @@
+{
+  "observedUtc": "2026-10-04T23:54:49.051988+00:00",
+  "deploymentCommit": "b727f3eeea31c3c8b3eadf0a96763ac41b37273f",
+  "deploymentRun": "https://github.com/feuerbutter/feuerbutter.github.io/actions/runs/37245380412",
+  "base": "https://feuerbutter.github.io",
+  "requests": [
+    {
+      "path": "/404.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 2149,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/_astro/BaseLayout.CHvSfjL0.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 12207,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/cv/Weijun-Li-CV.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 43916,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/cv/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 5993,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 228,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 9418,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/bayesian-quantum-evidence.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 437,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/centre-of-momentum/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 3553,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/centre-of-momentum.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 344,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/citations.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 3719,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/genie-tki-tuning/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 5659,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/genie-tki-tuning.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 941,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 11230,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/new-physics-neutrino-facilities.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 784,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/quantum-constraints/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 4066,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/quantum-constraints.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 427,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/wishart-sampling.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 381,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/publications/yang-mills-plane-waves.bib",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 399,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/research/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 7931,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 74,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "bytes": 649,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/talks/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 6884,
+      "matchesBuild": true,
+      "pass": true
+    },
+    {
+      "path": "/release-check-missing-page-20261005/",
+      "status": 404,
+      "matchesCustom404": true,
+      "pass": true
+    }
+  ],
+  "result": "pass"
+}
