@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { talks } from '../lib/content';
+const years = [...new Set(talks.map(t => t.date.slice(0,4)))];
+---
+<BaseLayout title="Talks & posters | Weijun Li" description="Conference talks, seminars and posters by Weijun Li, with links to public event records and available resources.">
+  <div class="page-heading"><p class="eyebrow">Presentations</p><h1>Talks & posters</h1><p class="deck">Sharing research across experiments<br class="desktop-only" /> and disciplines.</p><p class="measure muted">Conference presentations and seminars, with public resources where available. Poster contributions distinguish presenting and coauthor roles.</p></div>
+  {years.map(year => <section class="year-section" aria-labelledby={`year-${year}`}><h2 class="year-label" id={`year-${year}`}>{year}</h2><div>{talks.filter(t => t.date.startsWith(year)).map(t => <article class="talk"><p class="publication-meta"><time datetime={t.date}>{t.displayDate}</time> · {t.kind}</p><h3>{t.title}</h3><p>{t.event}</p>{t.links.length > 0 && <div class="text-links">{t.links.map(link => <a href={link.url}>{link.label}<span aria-hidden="true"> ↗</span><span class="sr-only"> for {t.title}</span></a>)}</div>}</article>)}</div></section>)}
+</BaseLayout>

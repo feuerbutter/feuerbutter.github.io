@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publications, publicationUrl } from '../lib/content';
+const research = (await getCollection('research')).sort((a,b) => a.data.order-b.data.order);
+const rendered = await Promise.all(research.map(async item => ({ ...item, ...(await render(item)) })));
+for (const item of research) for (const id of item.data.publications) if (!publications.some(p => p.id === id)) throw new Error(`Unknown publication: ${id}`);
+---
+<BaseLayout title="Research | Weijun Li" description="Neutrino interaction modelling, detector reconstruction at JUNO and T2K, and Monte Carlo methods for quantum inference.">
+  <div class="page-heading"><p class="eyebrow">Questions & methods</p><h1>Research</h1><p class="deck">Connecting detector signals, physical models<br class="desktop-only" /> and reliable inference.</p></div>
+  <nav class="section-nav" aria-label="Research themes">{research.map((r,i) => <a href={`#${r.id}`}>0{i+1} {['Neutrino interactions','Reconstruction','Quantum inference'][i]}</a>)}</nav>
+  {rendered.map(({id,data,Content}, i) => <section class="research-section" id={id} aria-labelledby={`${id}-heading`}><div class="research-label"><p class="eyebrow">0{i+1} / Research theme</p><h2 id={`${id}-heading`}>{data.title}</h2></div><div class="prose"><Content />{data.publications.length > 0 && <div class="related-work"><h3>Related publications</h3><ul>{data.publications.map(id => { const p = publications.find(p => p.id === id)!; return <li><a href={publicationUrl(p)}>{p.title}</a> <span class="muted">({p.year})</span></li> })}</ul></div>}</div></section>)}
+</BaseLayout>

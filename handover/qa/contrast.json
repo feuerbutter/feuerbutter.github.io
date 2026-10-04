@@ -1,0 +1,22 @@
+[
+  {
+    "background": "rgb(250, 249, 246)",
+    "foreground": "rgb(0, 33, 71)",
+    "ratio": 15.24
+  },
+  {
+    "background": "rgb(250, 249, 246)",
+    "foreground": "rgb(88, 99, 101)",
+    "ratio": 5.89
+  },
+  {
+    "background": "rgb(0, 33, 71)",
+    "foreground": "rgb(250, 249, 246)",
+    "ratio": 15.24
+  },
+  {
+    "background": "rgb(163, 193, 173)",
+    "foreground": "rgb(0, 33, 71)",
+    "ratio": 8.24
+  }
+]

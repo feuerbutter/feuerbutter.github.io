@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile, cv } from '../lib/content';
+const issuedLabel = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(cv.issued));
+---
+<BaseLayout title="Curriculum vitae | Weijun Li" description="Appointments, education, awards and research experience of Weijun Li. Download the public academic CV.">
+  <div class="page-heading"><p class="eyebrow">Academic record</p><h1>Curriculum vitae</h1><p class="deck">{profile.name} <span lang="zh-Hans">{profile.nameChinese}</span></p><a class="button" href={profile.cvUrl}>Download public CV <span class="filetype">PDF</span><span aria-hidden="true">↓</span></a><p class="small muted">Public edition · {issuedLabel}</p></div>
+  <section class="cv-section" aria-labelledby="appointments-heading"><h2 id="appointments-heading">Appointments</h2><div>{cv.appointments.map(item => <article class="cv-item"><p class="publication-meta">{item.dates}</p><h3>{item.role}</h3><p>{item.institution}</p><p class="muted">{item.description}</p></article>)}</div></section>
+  <section class="cv-section" aria-labelledby="education-heading"><h2 id="education-heading">Education</h2><div>{cv.education.map(item => <article class="cv-item"><p class="publication-meta">{item.dates}</p><h3>{item.degree}</h3><p>{item.institution}</p><p class="muted">{item.detail}</p></article>)}</div></section>
+  <section class="cv-section" aria-labelledby="awards-heading"><h2 id="awards-heading">Grants & awards</h2><div>{cv.awards.map(item => <article class="award"><p class="publication-meta">{item.year}</p><h3>{item.title}</h3><p class="muted">{item.institution}</p></article>)}</div></section>
+  <section class="cv-section" aria-labelledby="collaborations-heading"><h2 id="collaborations-heading">Collaborations & detector work</h2><div><ul>{cv.collaborations.map(c => <li><strong>{c.name}</strong> · {c.dates}</li>)}</ul><ul>{cv.service.map(s => <li>{s}</li>)}</ul></div></section>
+  <section class="cv-section" aria-labelledby="skills-heading"><h2 id="skills-heading">Skills & languages</h2><div><h3>Scientific computing</h3><p>{cv.programming.join(' · ')}</p><h3>Languages</h3><ul>{cv.languages.map(l => <li>{l}</li>)}</ul></div></section>
+  <p class="cv-crosslink">The <a href="/publications/">publication record</a> and <a href="/talks/">talks and posters</a> are available separately.</p>
+</BaseLayout>

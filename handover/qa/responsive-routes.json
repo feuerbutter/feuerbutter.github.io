@@ -1,0 +1,74 @@
+[
+  {
+    "body": 4303,
+    "h1": "Research",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/research/",
+    "width": 390
+  },
+  {
+    "body": 3851,
+    "h1": "Publications",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/publications/",
+    "width": 390
+  },
+  {
+    "body": 2498,
+    "h1": "Talks & posters",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/talks/",
+    "width": 390
+  },
+  {
+    "body": 1916,
+    "h1": "Curriculum vitae",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/cv/",
+    "width": 390
+  },
+  {
+    "body": 701,
+    "h1": "Center-of-momentum variables in charged-current single-pion–single-proton events",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/publications/centre-of-momentum/",
+    "width": 390
+  },
+  {
+    "body": 1245,
+    "h1": "First combined tuning on transverse kinematic imbalance data with and without pion production constraints",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/publications/genie-tki-tuning/",
+    "width": 390
+  },
+  {
+    "body": 849,
+    "h1": "Sampling Quantum States with Inequality Constraints",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/publications/quantum-constraints/",
+    "width": 390
+  },
+  {
+    "body": 300,
+    "h1": "Page not found",
+    "main": true,
+    "missingImages": 0,
+    "overflow": false,
+    "path": "/404.html",
+    "width": 390
+  }
+]

@@ -1,0 +1,19 @@
+:root {
+  /* ATMO vibrant, shared with the maintained AtmNu/FactorPlotting style. */
+  --navy: #002147;
+  --cyan: #33BBEE;
+  --teal: #009988;
+  --orange: #EE7733;
+  --red: #ED2939;
+  --blue: #0077BB;
+  --sage: #A3C1AD;
+  --paper: #faf9f6;
+  --ink: var(--navy);
+  --muted: #586365;
+  --accent: var(--navy);
+  --accent-dark: #003368;
+  --line: #d9ddda;
+  --wash: var(--sage);
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', sans-serif;
+}

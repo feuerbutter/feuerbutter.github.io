@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PublicationEntry from '../../components/PublicationEntry.astro';
+import { publications, selected } from '../../lib/content';
+const years = [...new Set(publications.map(p => p.year))];
+---
+<BaseLayout title="Publications | Weijun Li" description="Research articles, proceedings and preprints by Weijun Li, with DOI, arXiv, software and BibTeX links.">
+  <div class="page-heading"><p class="eyebrow">Papers & preprints</p><h1>Publications</h1><p class="deck">Neutrino physics, quantum methods<br class="desktop-only" /> and statistical inference.</p><p class="measure muted">Journal articles, conference proceedings and preprints are labelled separately. Published papers and their preprints share a single entry.</p><a class="button secondary" href="/publications/citations.bib" download>Download bibliography <span class="filetype">BibTeX</span></a></div>
+  <section class="selected-index" aria-labelledby="selected-index-heading"><h2 id="selected-index-heading">Selected contributions</h2><div>{selected.map(p => <a href={`/publications/${p.id}/`}>{p.id === 'centre-of-momentum' ? 'Centre-of-momentum observables' : p.id === 'genie-tki-tuning' ? 'Combined GENIE tuning' : 'Constrained quantum-state sampling'} <span aria-hidden="true">→</span></a>)}</div></section>
+  <nav class="section-nav" aria-label="Publication years">{years.map(y => <a href={`#year-${y}`}>{y}</a>)}</nav>
+  {years.map(year => <section class="year-section" id={`year-${year}`} aria-labelledby={`heading-${year}`}><h2 class="year-label" id={`heading-${year}`}>{year}</h2><div>{publications.filter(p => p.year === year).map(p => <PublicationEntry publication={p} />)}</div></section>)}
+</BaseLayout>

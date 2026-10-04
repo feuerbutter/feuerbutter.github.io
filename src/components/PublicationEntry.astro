@@ -1,0 +1,19 @@
+---
+import { publicationUrl, citationVenue, typeLabel, type Publication } from '../lib/content';
+interface Props { publication: Publication; summary?: boolean; heading?: 'h2' | 'h3'; }
+const { publication: p, summary = false, heading: Heading = 'h3' } = Astro.props;
+const authors = p.authors.length > 6 ? p.authors.slice(0,3) : p.authors;
+---
+<article class="publication" id={p.id}>
+  <p class="publication-meta">{p.year}<span aria-hidden="true"> · </span>{typeLabel(p)}{p.status !== 'preprint' && <><span aria-hidden="true"> · </span>{p.status}</>}{p.type === 'white-paper' && <><span aria-hidden="true"> · </span>Preprint</>}</p>
+  <Heading><a href={publicationUrl(p)}>{p.title}</a></Heading>
+  <p class="authors">{authors.map((name, index) => <>{index > 0 && ', '}{['Weijun Li','W. Li'].includes(name) ? <strong>{name}</strong> : name}</>)}{p.authors.length > 6 && <>, et al.{!authors.includes('Weijun Li') && <> (including <strong>Weijun Li</strong>)</>}</>}{p.collaboration && <> · {p.collaboration}</>}</p>
+  <p class="venue"><cite>{citationVenue(p)}</cite> ({p.year})</p>
+  {summary && <p class="paper-summary">{p.summary}</p>}
+  <div class="text-links">
+    {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI <span class="sr-only">for {p.title}</span><span aria-hidden="true">↗</span></a>}
+    {p.arxiv && <a href={`https://arxiv.org/abs/${p.arxiv}`}>arXiv <span class="sr-only">for {p.title}</span><span aria-hidden="true">↗</span></a>}
+    {p.code && <a href={p.code}>Code <span class="sr-only">for {p.title}</span><span aria-hidden="true">↗</span></a>}
+    <a href={`/publications/${p.id}.bib`} download>BibTeX <span class="sr-only">for {p.title}</span></a>
+  </div>
+</article>
