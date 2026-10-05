@@ -32,3 +32,11 @@ Baseline: `e811184758001d1170fdcb8275a1c71edf0fd445`. The original local root HT
 - Local preview: Astro preview on loopback port 4321; serve `dist/` only.
 
 Original private CV and extraction were kept outside the repository. Optional portrait, additional profile identifiers and teaching/mentoring details remain omitted. Full screen-reader, axe and Lighthouse audits remain outside the completed checks; see `handover/VALIDATION.md`.
+
+## 2026 conference additions — 5 October 2026
+
+Content-maintenance owner: chat `01a10965-901a-74d3-a10e-d270125ad92f`, following the original website implementation chat. The owner requested addition and publication of two supplied public conference records. Maintained checkout remains on `main` with no concurrent writer observed.
+
+Added the Neutrino 2026 JUNO atmospheric reconstruction poster (co-presenter, conference range 21–26 June) and NPML 2026 talk (19 June), both at UC Irvine, to `src/data/talks.json`. The talks page now has ten entries. Sources and date precision are documented in `docs/CONTENT_AUDIT.md`. Regenerated the public CV, retaining three pages and all original font sizes with compact presentation spacing. Personal Word CV is untouched; copy-ready entries are supplied in this chat's final response.
+
+Validation: Astro check has zero errors/warnings/hints; production build and existing site checks pass (nine HTML pages, 157 local links). Desktop and 390 px mobile review confirm the two entries and links, with no horizontal overflow. All three final PDF pages rendered and visually reviewed; extracted text confirms both additions and retained experience. Current next step is push and verification of the GitHub Pages release for this content update.

@@ -33,6 +33,10 @@ styles = {
  'small': ParagraphStyle('small',fontName='Helvetica',fontSize=8.2,leading=11.4,textColor=grey,spaceAfter=3),
  'meta': ParagraphStyle('meta',fontName='Helvetica-Bold',fontSize=8,leading=12,textColor=teal,spaceAfter=3),
 }
+# Compact presentation spacing keeps ten entries and experience on one page.
+for name, base, leading in [('talkmeta', 'meta', 10), ('talkbody', 'b', 12), ('talksmall', 'small', 10.5)]:
+ styles[name] = ParagraphStyle(name, parent=styles[base], leading=leading, spaceAfter=2)
+
 def p(text,style='b'): return Paragraph(text,styles[style])
 def e(text): return escape(text)
 def link(label,url): return f'<a href="{e(url)}" color="#002147">{e(label)}</a>'
@@ -68,9 +72,9 @@ for a in papers:
 story.extend([p('Public software','h'),p(link('QSCMC','https://github.com/feuerbutter/QSCMC')+' · Sequentially constrained Monte Carlo sampling of quantum states.'),p(link('QSam','https://github.com/feuerbutter/QSam')+' · Problem-specific, uncorrelated quantum-state sampling.'),PageBreak(),p('Talks, posters and experience','title')])
 for t in talks:
  links=' · '.join(link(x['label'],x['url']) for x in t['links'])
- group=[p(e(t['displayDate'])+' · '+e(t['kind']),'meta'),p('<b>'+e(t['title'])+'</b>'),p(e(t['event']),'small')]
- if links: group.append(p(links,'small'))
- group.append(Spacer(1,3)); story.append(KeepTogether(group))
+ group=[p(e(t['displayDate'])+' · '+e(t['kind']),'talkmeta'),p('<b>'+e(t['title'])+'</b>','talkbody'),p(e(t['event']),'talksmall')]
+ if links: group.append(p(links,'talksmall'))
+ group.append(Spacer(1,2)); story.append(KeepTogether(group))
 story.extend([p('Collaborations and detector work','h'),p('GENIE (since July 2023); T2K (since October 2021). SuperFGD assembly and hardware work; training and work as a data-acquisition expert.','small'),p('Scientific computing and languages','h'),p('C++, Python, MATLAB, LaTeX and Linux.','small'),p('; '.join(cv['languages'])+'.','small')])
 output=ROOT/'public/cv/Weijun-Li-CV.pdf'; output.parent.mkdir(parents=True,exist_ok=True)
 doc=SimpleDocTemplate(str(output),pagesize=A4,rightMargin=47,leftMargin=47,topMargin=42,bottomMargin=56,title='Weijun Li — Public academic CV',author='Weijun Li')

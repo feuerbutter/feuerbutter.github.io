@@ -21,7 +21,7 @@ Add a paper or talk by editing its dataset, then run `pnpm check && pnpm build &
 
 ## Public CV
 
-The public edition is a compact academic record, not a verbatim copy of the private source document. It omits application-oriented marks, grant amounts, speculative/internal performance claims and any unprovided personal details. It retains appointments, degrees, awards, the seven scholarly records, eight presentations, software, detector work and skills.
+The public edition is a compact academic record, not a verbatim copy of the private source document. It omits application-oriented marks, grant amounts, speculative/internal performance claims and any unprovided personal details. It retains appointments, degrees, awards, the seven scholarly records, ten presentations, software, detector work and skills.
 
 The committed PDF is built from the same JSON records:
 
@@ -32,7 +32,7 @@ python3 scripts/build-public-cv.py
 
 For the Chinese name, pass `--cjk-font /path/to/a/Chinese-capable.ttf`; the reviewed edition used the locally available Arial Unicode font. The optional font is subset-embedded, and the PDF remains portable. Without a font argument, the generator uses the English name. Use the installed/bundled Python environment rather than installing packages when ReportLab is already available.
 
-After generation, render and inspect every PDF page, including pagination and glyphs. Reconcile the issue date in `cv.json` and the displayed/public-PDF date. The script uses that date; do not replace the original CV revision date with the public-edition date. The source document did not declare a revision date.
+The presentation list uses compact spacing to keep the current ten entries and experience on page three without reducing font sizes. After generation, render and inspect every PDF page, including pagination and glyphs. Reconcile the issue date in `cv.json` and the displayed/public-PDF date. The script uses that date; do not replace the original CV revision date with the public-edition date. The source document did not declare a revision date.
 
 ## Optional additions
 

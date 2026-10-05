@@ -1,5 +1,33 @@
 [
   {
+    "id": "juno-atmospheric-neutrino-reconstruction-neutrino-2026",
+    "date": "2026-06-21",
+    "displayDate": "21–26 June 2026",
+    "title": "Machine-Learning–Based Reconstruction of Atmospheric Neutrino Events in the JUNO Liquid Scintillator Detector",
+    "event": "Neutrino 2026 · XXXII International Conference on Neutrino Physics and Astrophysics · University of California, Irvine, USA",
+    "kind": "Poster · co-presenter",
+    "links": [
+      {
+        "label": "Conference record and poster",
+        "url": "https://indico.global/event/15740/contributions/147419/"
+      }
+    ]
+  },
+  {
+    "id": "juno-atmospheric-neutrino-reconstruction-npml-2026",
+    "date": "2026-06-19",
+    "displayDate": "19 June 2026",
+    "title": "Machine Learning for Atmospheric Neutrino Reconstruction at JUNO",
+    "event": "NPML 2026 · Neutrino Physics and Machine Learning · University of California, Irvine, USA",
+    "kind": "Contributed talk",
+    "links": [
+      {
+        "label": "Conference record and slides",
+        "url": "https://indico.slac.stanford.edu/event/10387/contributions/15050/"
+      }
+    ]
+  },
+  {
     "id": "tki-trackless",
     "date": "2024-06-21",
     "displayDate": "21 June 2024",
